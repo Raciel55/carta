@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <link rel="icon" type="image/jpg" href="/assets/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="click-heart">
+            <h2>Dale click en el corazón para ver el mensaje...</h2>
+        </div>
+
+        <div class="envelope">
+            <div class="flap top-flap"></div>
+            <div class="flap right-flap"></div>
+            <div class="heart-seal">
+                <img src="./pics/corazon.png" alt="corazon" class="img-fliud w-50">
+            </div>
+        </div>
+
+        <div class="memories-section">
+            <h2>Luego... un par de recuerdos cotorros</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="./pics/1.jpeg" alt="Memory 1"></div>
+                <div class="gallery-item"><img src="./pics/2.jpeg" alt="Memory 2"></div>
+                <div class="gallery-item"><img src="./pics/4.jpeg" alt="Memory 4"></div>
+                <div class="gallery-item"><img src="./pics/3.jpeg" alt="Memory 3"></div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="click-heart container d-flex flex-column align-items-center justify-content-center text-center">
+
+            <h2 class="heart-title mb-4">¿Falta alguno?</h2>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <button type="button" class="recuerdo position-relative" id="open-memory-modal">
+
+                    <img src="./pics/blanco.png" alt="Crear un recuerdo" class="img-fluid">
+
+                    <h3 class="texto-sobre-imagen">
+                        Crear un recuerdo...
+                    </h3>
+
+                </button>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="modal-overlay">
+        <div class="modal-letter">
+            <button class="close-modal">×</button>
+            <div class="letter">
+                <h1>Para la Srta. Araceli</h1>
+                <div class="letter-content">
+                    <p style="text-align: justify;">Quizas este sea uno de los momentos más extraños de mi vida. Cuando
+                        uno menos se da cuenta, los nervios se apoderan del ambiente, el sentimiento tembloroso en las
+                        extremidades aparece y las mariposas en el estomago no dejan concentrarse. Y, sin embargo, aqui
+                        andamos, más felices de lo que un sitio web pudiese decir.</p>
+                    <p style="text-align: justify;">Me gustaría que este mensaje fuese dirijido tanto a tí, Ara, así
+                        como al Raciel del futuro. No es sorpresa que en este momento, yo, el Raciel del jueves 12 a las
+                        14:25, no pueda sino especular acerca de lo que estarán los dos haciendo. No obstante, me hago
+                        una buena ídea y, por ello, quisiera empezar mi mensaje dirijiendome al tlalnepantlense.</p>
+                    <p style="text-align: justify;">Reishiel, entiendo que hayas tenido dudas acerca de lo que esto
+                        puede implicar y también estoy seguro de que te vale cacahuate ahora y desde hace ya un tiempo.
+                        No tienes idea de la envidia que siento en este momento. Tienes a tu lado a una persona
+                        simplemente increíble, la cual no solo te hace sentir bien en lo superficial, sino que también
+                        logra despertar en ti un sentimiento muy rara vez encontrado... tranquilidad. Entonces, te voy a
+                        exigir que cuides de ella en todo momento, la apoyes sin importar las consecuencias y en ningún
+                        momento le hagas daño.</p>
+                    <p style="text-align: justify;">Y ahora, para mi persona favorita de este escenario futuro. La
+                        cantidad de cosas que pienso, plasmadas en un texto, es injusta. Empero, trataré de resumirlo.
+                        Simplemente, el hecho de pensar en lo improbable que era conocernos es evidencia suficiente para
+                        hacerme dudar de la casualidad. Y me queda completamente claro que esto tiene el potencial para
+                        ser duradero, tal vez hasta que las estrías se acaben...</p>
+                    <p style="text-align: justify;">Pero, dejando de lado mi humor todo roto y simple, quisiera hacerte
+                        saber que el chavo que está ahí contigo no para de pensar en ti. Has logrado devolvernos un
+                        concepto que creíamos olvidado, un propósito. ¿De días? ¿De semanas? ¿De meses? ¿De años? Aún no
+                        lo sé, el tiempo lo dirá, pero tengo el presentimiento de que será una vida.</p>
+                    <p style="text-align: justify;"> Finalmente, no me queda más que decirte... Gracias por todo.</p>
+                    <p class="signature">De veritas<br>Raciel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="memory-modal">
+        <div class="modal-letter">
+            <button class="close-modal" id="close-memory-modal">×</button>
+
+            <div class="letter">
+                <h1>Un nuevo recuerdo</h1>
+
+                <div class="letter-content">
+                    <p style="text-align: justify;">
+                        Para este propósito, es necesario que voltees a ver al más naco y estúpido del mundo... Tiene una pregunta que hacerte.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
